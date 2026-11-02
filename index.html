@@ -6,29 +6,108 @@
     <title>My Site</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f9f9f9;
+            padding: 20px;
+            background: #fff;
+            color: #333;
         }
-        .container {
+        header {
             text-align: center;
+            margin-bottom: 40px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        h1 {
+            color: #bd00ff;
         }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* Add your CSS styles here */
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Ensure 'site.svg' is in the same directory as index.html -->
-        <img src="site.svg" alt="Site Logo">
+    <header>
+        <h1>Welcome to My Site</h1>
+        <!-- You can still keep the logo if you want -->
+        <img src="<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0b0e">
+    <title>FL0W3R</title>
+    <!-- Add futuristic fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./config.js"></script>
+</head>
+<body>
+    <div class="petals" aria-hidden="true"></div>
+    <header class="topbar">
+        <a class="brand" href="./" aria-label="FL0W3R home">
+            <span class="flower">✿</span> FL0W3R
+        </a>
+        <div class="top-actions">
+            <span class="status-dot"></span>
+            <span id="status">Local browser shell</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome" id="home">
+            <div class="eyebrow">A LITTLE SPACE TO EXPLORE</div>
+            <h1>Let your day <em>bloom.</em></h1>
+            <p class="subtitle">Search the web or enter a website address.</p>
+            <form id="searchForm" class="search">
+                <span class="search-icon">⌕</span>
+                <input id="address" autocomplete="off" spellcheck="false" placeholder="Search or enter a URL..." aria-label="Search or enter a URL">
+                <button type="submit">Go <span>↗</span></button>
+            </form>
+            <div class="quick-links">
+                <button data-url="https://duckduckgo.com" class="quick"><span>◉</span> DuckDuckGo</button>
+                <button data-url="https://www.wikipedia.org" class="quick"><span>✧</span> Wikipedia</button>
+                <button data-url="https://www.youtube.com" class="quick"><span>▶</span> YouTube</button>
+                <button data-url="https://github.com" class="quick"><span>⌘</span> GitHub</button>
+            </div>
+        </section>
+
+        <section class="browser" id="browser" hidden>
+            <div class="browser-head">
+                <div class="browser-controls">
+                    <button id="back" title="Back">←</button>
+                    <button id="forward" title="Forward">→</button>
+                    <button id="refresh" title="Reload">↻</button>
+                    <button id="homeBtn" title="Home">⌂</button>
+                </div>
+                <div class="current-url" id="currentUrl">Ready</div>
+                <button id="newTab" class="new-tab" title="Open in a new tab">＋</button>
+            </div>
+            <div class="notice" id="notice">
+                <strong>Website compatibility note</strong>
+                <span>Some websites block being displayed inside another website. If this page stays blank or shows an error, use “Open separately”. A full remote-browser service must be deployed separately; GitHub Pages cannot run that server.</span>
+            </div>
+            <div class="frame-wrap">
+                <iframe id="viewer" title="Website viewer" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads"></iframe>
+                <div class="blocked" id="blocked" hidden>
+                    <div class="blocked-icon">✿</div>
+                    <h2>This site may not allow embedding</h2>
+                    <p>Some sites prevent other pages from displaying them. FL0W3R cannot override that browser security rule.</p>
+                    <button id="openExternal">Open separately ↗</button>
+                </div>
+            </div>
+        </section>
+        <footer>Made to bloom <span>✿</span></footer>
+    </main>
+    <script src="./app.js"></script>
+</body>" alt="Logo" style="max-width: 150px;">
+    </header>
+    
+    <div class="content">
+        <p>This is where your main content goes.</p>
+        <p>You can add paragraphs, images, links, and anything else you need for your site.</p>
     </div>
 </body>
 </html>
