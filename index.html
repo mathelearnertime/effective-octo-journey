@@ -7,20 +7,28 @@
     <style>
         body {
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: #f0f0f0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
         }
         img {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <!-- Replace 'site.svg' with your actual image filename -->
-    <img src="site.svg" alt="Site Logo">
+    <div class="container">
+        <!-- Ensure 'site.svg' is in the same directory as index.html -->
+        <img src="site.svg" alt="Site Logo">
+    </div>
 </body>
 </html>
